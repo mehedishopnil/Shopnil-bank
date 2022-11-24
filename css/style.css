@@ -1,0 +1,12 @@
+body{
+    font-family: poppins;
+    padding: 20px;
+    padding: 50px;
+}
+.input{
+   box-shadow: 1px 1px 10px rgb(187, 187, 187); 
+   border-radius: 15px;
+   padding: 20px;
+   margin: 40px 0px;
+   font-family: poppins;
+}

@@ -1,12 +1,64 @@
-body{
+body {
     font-family: poppins;
     padding: 20px;
     padding: 50px;
 }
-.input{
-   box-shadow: 1px 1px 10px rgb(187, 187, 187); 
-   border-radius: 15px;
-   padding: 20px;
-   margin: 40px 0px;
-   font-family: poppins;
+
+.input {
+    box-shadow: 1px 1px 10px rgb(187, 187, 187);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px 0px;
+    font-family: poppins;
 }
+
+#transactionArea {
+    display: none;
+    font-family: poppins;
+}
+
+
+.deposit {
+    background-color: violet;
+    border-radius: 15px;
+    color: white;
+
+}
+
+
+.withdraw {
+    background-color: lightsalmon;
+    border-radius: 15px;
+    color: white;
+
+}
+
+
+.balance {
+    background-color: orange;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.status {
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0px 30px;
+}
+
+.status h2 {
+    font-size: 50px;
+}
+
+
+
+.transaction-history {
+    font-family: poppins;
+    box-shadow: 2px 2px 10px rgba(185, 185, 185, 0.904);
+    margin: 50px 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.deposit-fund {}

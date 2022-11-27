@@ -96,7 +96,7 @@
             return amountNumber;
         }
 
-        function addDepositStatus(id, depositNumber) {
+        function updateSpanText(id, depositNumber) {
             const balance = document.getElementById(id).innerText;
             const balanceNumber = parseFloat(balance);
             const total = balanceNumber + depositNumber;
@@ -128,8 +128,9 @@
 
 
             //Balance
-            addDepositStatus("currentDeposit", depositNumber);
-            addDepositStatus("balance", depositNumber);
+            updateSpanText("currentDeposit", depositNumber);
+            document.getElementById("depositAmount").value= "";
+            updateSpanText("balance", depositNumber);
 
 
         })
@@ -140,7 +141,11 @@
         withdrawAmount.addEventListener('click', function () {
 
             const withdrawNumber = getInputNumber("withdraw-input");
-            console.log(withdrawNumber);
+
+            updateSpanText("withdraw",withdrawNumber);
+            document.getElementById("withdraw-input").value = "";
+
+            updateSpanText("balance", - 1 * withdrawNumber);
 
         })
 
